@@ -1,0 +1,23 @@
+{
+    "name": "nodusblocker/cleanphp",
+    "description": "A lightweight PHP Library to Make Code Clean",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Firoj Haque",
+            "email": "nodusblocker@gmail.com"
+        }
+    ],
+    "config": {
+        "platform": {
+            "php": "5.4.0"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NodusBlocker\\CleanPhp\\": "src"
+        }
+    },
+    "require": {
+    }
+}
