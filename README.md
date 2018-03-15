@@ -46,3 +46,4 @@ Array
 $accessor->has($array, 'b'); // return false
 ```
 ##### ParameterBag
+
