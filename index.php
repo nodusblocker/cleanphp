@@ -1,9 +1,4 @@
-# Clean Code
-A Simple PHP API to make code cleaner and readable. Available APIs:
- - ArrayAccessor
- - ParameterBag
-##### ArrayAccessor
-```php
+<?php
 require_once 'vendor/autoload.php';
 //Include class ArrayAccessor
 use NodusBlocker\CleanPhp\Accessor\ArrayAccessor;
@@ -14,36 +9,10 @@ $array = [];
 $accessor = new ArrayAccessor('.');
 //Set a array value
 $accessor->set($array, 'a', 1);
-print_r($array);
-```
-Output:
-```
-Array
-(
-    [a] => 1
-)
-```
-```php
-$accessor->get($array, 'a')); // return 1
+
+print_r($accessor->get($array, 'a')); // Output: Array([a] => 1)
 $accessor->get($array, 'b'); // Don't throw error, return null
 $accessor->has($array, 'a'); // return true
 $accessor->has($array, 'b'); // return false
 $accessor->set($array, 'b.c', 'abc');
 print_r($array);
-```
-Output:
-```
-Array
-(
-    [a] => 1
-    [b] => Array
-    (
-        [c] => abc
-    )
-)
-```
-```php
-$accessor->has($array, 'b'); // return false
-```
-##### ParameterBag
-
